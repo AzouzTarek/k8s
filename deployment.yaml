@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: moncv
+  labels:
+    app: moncv
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: moncv
+  template:
+    metadata:
+      labels:
+        app: moncv
+    spec:
+      containers:
+      - name: moncv
+        image: azouztarek/moncv:22
+        ports:
+        - containerPort: 80
+        resources: {}
