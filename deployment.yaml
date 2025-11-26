@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: moncv
-        image: azouztarek/moncv:177
+        image: azouztarek/moncv:178
         ports:
         - containerPort: 80
         resources: {}
